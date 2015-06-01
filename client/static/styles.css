@@ -1,0 +1,30 @@
+.header {
+	border-bottom: 1px solid black;
+	background-color: #ea2525;
+}
+
+.header li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.welcome {
+	margin-left: 50px;
+}
+
+.form {
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.content {
+	margin-top: 70px;
+}
+
+.navbar-header {
+	width: 500px;
+}
