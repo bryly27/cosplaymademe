@@ -8,9 +8,13 @@
 	</div>
 
 	<div class='container'>
+		<div class='loading col-md-3 col-md-offset-5 col-sm-3 col-sm-offset-5 col-xs-3 col-xs-offset-4' ng-hide='profiles'>
+			<img src="https://s3-us-west-1.amazonaws.com/cosplaymademe/site_photos/loading.svg">
+		</div>
+
 		<div ng-repeat='profile in profiles' class='col-md-3 col-sm-6 col-xs-12 main_profile_photos '>
 			<a href='' data-toggle="modal" data-target="#{{profile.id}}"><img src="{{profile.images.standard_resolution.url}}" ng-class="{main_hover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false"></a>
-			
+
 			<!-- Modal -->
 		  <div class="modal fade" id="{{profile.id}}" role="dialog">
 		    <div class="modal-dialog">

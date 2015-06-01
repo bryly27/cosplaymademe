@@ -3,6 +3,9 @@
 
 	<div class='content container'>
 		<div class='cosplayers'>
+			<div class='loading col-md-3 col-md-offset-5 col-sm-3 col-sm-offset-5 col-xs-3 col-xs-offset-4' ng-hide='cosplayers'>
+				<img src="https://s3-us-west-1.amazonaws.com/cosplaymademe/site_photos/loading.svg">
+			</div>
 			<div ng-repeat='cosplay in cosplayers' class='col-md-2 col-sm-3 col-xs-4 cosplayer'>
 				<a href="http://www.instagram.com/{{cosplay.username}}" target='_blank'>
 					<img src="{{cosplay.profile_picture}}" alt='cosplay made me instagram photo' ng-class="{cosplayers_hover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
