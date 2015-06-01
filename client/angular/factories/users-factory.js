@@ -4,13 +4,13 @@ cosplay.factory('users_factory', function($http) {
 
 
 	factory.get_user = function(callback){
-		$http.post('/users/get_user').success(function(results){
+		$http.get('/users/get_user').success(function(results){
 			callback(results)
 		});
 	};
 
 	factory.get_cosplay = function(callback){
-		$http.post('/users/get_cosplay').success(function(results){
+		$http.get('/users/get_cosplay').success(function(results){
 			callback(results);
 		});
 	};

@@ -1,6 +1,33 @@
-<div ng-controller = 'users_controller'>
-	<div class='content'>
-		<h1>news</h1>
+<div ng-controller='news_controller'>
+	<div class='content row container'>
+		<h2>#CosplayMadeMe news is underconstruction</h2>
 	</div>
 	
+	<div class='row container'>
+		<div class='col-lg-10'>
+			<h4>news</h4>
+		</div>
+		<div class='col-lg-2'>
+			<h4>Upcoming Cons</h4>
+
+			<div class='future_cons' ng-repeat='con in cons'>
+				<a ng-href='{{con.link}}'><h5>{{con.title}}</h5></a>
+			</div>
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
 </div>

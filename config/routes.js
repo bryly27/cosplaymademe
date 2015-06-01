@@ -4,17 +4,22 @@ var users = require('./../server/controllers/users.js');
 module.exports = function(app) {
 
 
-app.post('/users/get_user', function(req, res){
+app.get('/users/get_user', function(req, res){
 	users.get_user(req, res);
 });
 
-app.post('/users/get_cosplay', function(req, res){
+app.get('/users/get_cosplay', function(req, res){
 	users.get_cosplay(req, res);
 });
 
 app.get('/users/get_cosplayers', function(req, res){
 	users.get_cosplayers(req, res);
 });
+
+app.get('/news/get_cons', function(req, res){
+	users.get_cons(req, res);
+})
+
 
 	// app.post('/users/add_user', function(req, res) {
 	// 	users.add_user(req, res);

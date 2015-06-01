@@ -55,11 +55,16 @@ module.exports = (function() {
 					res.json(users);
 				}
 			});
+		},
 
-
-
-
-
+		get_cons: function(req, res){
+			var query = connection.query("SELECT * FROM cons", function(err, results){
+				if(err){
+					console.log('error', err);
+				}else{
+					res.json(results);
+				}
+			})
 		}
 
 

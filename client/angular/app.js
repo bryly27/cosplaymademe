@@ -18,6 +18,9 @@ cosplay.config(function($routeProvider){
 		.when('/cosplayers',{
 			templateUrl: 'partials/cosplayers.html',
 		})
+		.when('/admin_login',{
+			templateUrl: 'partials/admin_login.html',
+		})
 		.otherwise({
 			redirectTo: '/'
 		})
