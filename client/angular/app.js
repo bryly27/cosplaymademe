@@ -1,4 +1,4 @@
-// Where you create the angular app and sp?ecify its options
+// Where you create the angular app and specify its options
 var cosplay = angular.module('cosplay', ['ngRoute', 'LocalStorageModule']);
 		cosplay.config(['$httpProvider', function($httpProvider){
 			$httpProvider.defaults.useXDomain = true;

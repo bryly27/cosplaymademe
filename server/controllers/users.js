@@ -65,6 +65,26 @@ module.exports = (function() {
 					res.json(results);
 				}
 			})
+		},
+
+		add_admin: function(req, res){
+			var query = connection.query("INSERT INTO users (username, password) VALUES (?,?)", [req.body.username, req.body.password], function(err, results){
+				if(err){
+					console.log('error', err);
+				}else{
+					res.json(req.body);
+				}
+			})
+		},
+
+		get_users: function(req, res){
+			var query = connection.query("SELECT * FROM users", function(err, results){
+				if(err){
+					console.log('error', err);
+				}else{
+					res.json(results);
+				}
+			})
 		}
 
 

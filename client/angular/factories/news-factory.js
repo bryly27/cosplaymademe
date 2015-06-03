@@ -14,6 +14,19 @@ cosplay.factory('news_factory', function($http) {
 		});
 	};
 
+	factory.add_admin = function(data, callback){
+		$http.post('/admin/add_admin', data).success(function(results){
+			callback(results);
+		})
+	}
+
+	factory.get_users = function(callback){
+		console.log('here');
+		$http.get('/admin/get_users').success(function(results){
+			callback(results);
+		})
+	}
+
 
 	return factory;
 })

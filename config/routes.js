@@ -20,6 +20,14 @@ app.get('/news/get_cons', function(req, res){
 	users.get_cons(req, res);
 })
 
+app.post('/admin/add_admin', function(req, res){
+	users.add_admin(req, res);
+})
+
+app.get('/admin/get_users', function(req, res){
+	users.get_users(req, res);
+})
+
 
 	// app.post('/users/add_user', function(req, res) {
 	// 	users.add_user(req, res);
